@@ -1,0 +1,12 @@
+{
+	"name": "overlayapi",
+	"description": "api for making overlays",
+	"author": "Ahhh_Saturn",
+	"version": "1.0.0",
+	"homepage": "",
+	"preload": false,
+	"main": "index.js",
+	"priority": 5,
+	"dependencies": [],
+	"tags": ["api", "gui"]
+}
