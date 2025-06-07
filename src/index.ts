@@ -48,7 +48,7 @@ class Overlay {
 		});
 		return this;
 	};
-	onload = async (fn: VoidFunction) => {
+	render = async (fn?: VoidFunction) => {
 		await fetch(
 			`http://localhost:5131/mods/${this.modName}/assets/${this.htmlFile}`,
 		)
@@ -56,6 +56,6 @@ class Overlay {
 			.then((html) => {
 				this.overlayElem.innerHTML = html;
 			});
-		fn();
+		if (fn) fn();
 	};
 }
